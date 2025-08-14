@@ -1,71 +1,55 @@
-# supersales-dashboard
 
-📌 Overview
+ # 📊 Power BI Dashboard – Superstore Sales Analysis
+Overview
 
-The Superstore Sales Dashboard is an interactive Power BI report designed to analyze sales performance across various dimensions such as product categories, states, and time periods.
-It provides insights into Total Sales, Total Profit, Total Orders, and Profit Margin % to help stakeholders make data-driven decisions.
+This Power BI report analyzes the Sample Superstore dataset to provide insights into sales, profit, and customer trends.
+The dashboard includes key performance indicators (KPIs), trend analysis, and category-based visualizations to help in business decision-making.
 
-📊 Key Features
+📂 Data Source
 
-KPI Cards:
+Dataset: Sample - Superstore (Orders table)
 
-Total Sales: 836.15K
+Main Fields Used: Order Date, Sales, Profit, Quantity, Category, Segment, Region
 
-Total Profit: 145.45K
+📌 KPIs in Dashboard
 
-Total Orders: 1544
+Total Sales → SUM(Sales) – total revenue generated.
 
-Profit Margin %: 0.17
+Profit Margin % → DIVIDE(SUM(Profit), SUM(Sales), 0) – profitability ratio.
 
-Sales Trend Over Time: Line chart showing yearly sales trends (2014–2017).
+Average Order Value → DIVIDE(SUM(Sales), COUNTROWS(Orders), 0) – average sale per order.
 
-Sales by Product Name: Bar chart to identify top-performing products.
+Sales Growth % → Year-over-year growth in sales.
 
-Geographical Sales Analysis: Map visualization of sales across US states.
+Total Orders → count of distinct orders.
 
-Category Filter: Drill-down analysis by Furniture, Office Supplies, and Technology.
+📊 Visuals Used
 
-Month Filter: Select specific months to view targeted sales insights.
+Card Visuals – for KPIs (Total Sales, Profit Margin %, Avg Order Value).
 
-📂 Data Sources
+Donut Chart – Profit Margin % by Category.
 
-Dataset: Superstore sales dataset (CSV/Excel imported into Power BI).
+Line Chart – Monthly Sales Trends.
 
-Fields Used:
+Map Visual – Sales by State/Region.
 
-Sales, Profit, Orders, Product Name, Category, State, Order Date.
+Bar Chart – Sales by Sub-Category.
 
-🛠 Tools & Technologies
+🛠 How to Use
 
-Microsoft Power BI Desktop
-
-DAX for calculated measures
-
-Map Visual for geographic representation
-
-Slicers for category and month-based filtering
-
-📈 Usage
-
-Open the .pbix file in Power BI Desktop.
-
-Interact with slicers to filter data by category or month.
+Use the filters/slicers to view data by Year, Category, or Region.
 
 Hover over visuals for detailed tooltips.
 
-Use the map to focus on specific states.
+Click on chart segments to cross-filter other visuals.
 
-Compare product sales and profit margins to optimize business strategy.
+📈 Suggested Extensions
 
-🎯 Purpose
+Add Customer Segment analysis.
 
-This dashboard is designed for:
+Include Discount Impact chart.
 
-Sales Managers to track performance trends.
-
-Business Analysts to identify high and low-performing products.
-
-Executives to make informed decisions based on profitability.
+Create Forecasting for next year’s sales.
 
 📌 Author
 
